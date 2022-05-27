@@ -4,13 +4,17 @@
 # find_anagrams("below", "elbow") --> True
 
 
-def find_anagram(word, anagram):
+def find_anagrams(word, anagram):
     # [assignment] Add your code here
-print(find_anagram("won", "now"))
-    return True
+    str1 = input("insert your first word:")
+    str2 = input("insert your second word:")
+    str1_sorted = sorted(str1)
+    str2_sorted = sorted(str2)
+    if str1_sorted == str2_sorted:
+        return True
+    if str1_sorted != str2_sorted:
+        return False
+find_anagrams(str1, str2)
 
-def find_anagram(word, anagram):
-print(find_anagram("life", "nile"))
-    return False
     
 

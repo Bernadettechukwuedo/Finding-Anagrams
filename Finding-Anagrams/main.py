@@ -7,7 +7,7 @@
 def find_anagram(word, anagram):
     # [assignment] Add your code here
 print(find_anagram("won", "now"))
-    return False
+    return True
 
 def find_anagram(word, anagram):
 print(find_anagram("life", "nile"))

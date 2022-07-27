@@ -4,11 +4,14 @@
 # find_anagrams("below", "elbow") --> True
 
     
-def find_anagrams(word,anagram):
+def find_anagrams(word, anagram):
     # [assignment] Add your code here
     if sorted(word) == sorted(anagram):
         return True
-    else: 
+    else:
         return False
-print(find_anagrams("elbow", "below"))
-print(find_anagrams("lie","old"))
+
+
+input1 = input("Enter your first word:")
+input2 = input("Enter your anagram:")
+print(find_anagrams(input1, input2))
